@@ -34,7 +34,7 @@ return new class extends Migration
             $table->index('grade_id');
             $table->index('created_by');
         });
-        
+
         // Create answers table
         Schema::create('answers', function (Blueprint $table) {
             $table->uuid('id')->primary(); // Primary key with UUID

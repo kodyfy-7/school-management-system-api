@@ -25,7 +25,7 @@ class GradeSeeder extends Seeder
             'SS3 (Science)',
             'SS3 (Arts)',
             'SS3 (Commerce)',
-        ];        
+        ];
 
         foreach ($grades as $gradeName) {
             Grade::firstOrCreate(

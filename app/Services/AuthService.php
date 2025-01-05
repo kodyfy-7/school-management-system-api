@@ -11,10 +11,10 @@ class AuthService
         return LoginLog::where('email', $email)->where('tag', $tag)->first();
     }
 
-    public function createLoginActivity($request, $action, $isSuccess = false, $deviceInfo, $uniqTime)
+    public function createLoginActivity($request, $action, $isSuccess, $deviceInfo, $uniqTime)
     {
         $device = $deviceInfo['device'] ? $deviceInfo['device'] : null;
-        $platform = $deviceInfo['platform'] ? $deviceInfo['platform'] : null; 
+        $platform = $deviceInfo['platform'] ? $deviceInfo['platform'] : null;
         $browser = $deviceInfo['browser'] ? $deviceInfo['browser'] : null;
         $isMobile = $deviceInfo['is_mobile'];
 

@@ -26,7 +26,7 @@ class SubjectSeeder extends Seeder
             'Religious Studies',
             'French',
             'Basic Technology', // For JSS2 and JSS3
-        
+
             // SS Levels (Science, Arts, Commerce)
             'Intermediate Mathematics',
             'Biology',
@@ -42,7 +42,6 @@ class SubjectSeeder extends Seeder
             'Commerce',
             'Business Studies',
         ];
-        
 
         foreach ($subjects as $subjectName) {
             Subject::firstOrCreate(

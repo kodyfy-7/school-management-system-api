@@ -10,5 +10,5 @@ class Grade extends Model
 {
     use HasUuids, SoftDeletes;
 
-    protected $fillable = ["name"];
+    protected $fillable = ['name', 'created_by', 'updated_by', 'teacher_id', 'description', 'status'];
 }

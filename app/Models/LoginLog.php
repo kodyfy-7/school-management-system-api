@@ -11,17 +11,17 @@ class LoginLog extends Model
 
     // Defining fillable attributes
     protected $fillable = [
-        'email', 
+        'email',
         'tag',
-        'ip_address', 
-        'user_agent', 
-        'is_successful', 
-        'x_forwarded_for', 
-        'logged_in_at', 
-        'logged_out_at', 
-        'device', 
-        'browser', 
-        'platform', 
+        'ip_address',
+        'user_agent',
+        'is_successful',
+        'x_forwarded_for',
+        'logged_in_at',
+        'logged_out_at',
+        'device',
+        'browser',
+        'platform',
         'is_mobile',
     ];
 
@@ -44,7 +44,7 @@ class LoginLog extends Model
             'device' => $device,
             'browser' => $browser,
             'platform' => $platform,
-            'is_mobile' => $isMobile
+            'is_mobile' => $isMobile,
         ]);
     }
 }

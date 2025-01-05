@@ -28,7 +28,7 @@ class HelperService
 
     public function getDeviceInfo()
     {
-        $agent = new Agent();
+        $agent = new Agent;
 
         // Get the user's device
         $device = $agent->device();

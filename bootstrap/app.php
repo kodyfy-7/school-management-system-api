@@ -18,7 +18,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'scopes' => CheckScopes::class,
             'scope' => CheckForAnyScope::class,
-            'accept-json' => AlwaysAcceptJson::class
+            'accept-json' => AlwaysAcceptJson::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

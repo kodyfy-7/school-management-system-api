@@ -10,5 +10,5 @@ class Type extends Model
 {
     use HasUuids, SoftDeletes;
 
-    protected $fillable = ["name"];
+    protected $fillable = ['name'];
 }
